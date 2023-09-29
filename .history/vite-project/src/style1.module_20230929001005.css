@@ -1,0 +1,10 @@
+.container {
+  width: 100%;
+  height: 400px;
+}
+.Sidebar {
+  background-color: blue;
+}
+.Content {
+  background-color: red;
+}
