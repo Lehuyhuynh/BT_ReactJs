@@ -79,13 +79,19 @@
 // }
 
 // export default App;
-import { RouterProvider } from "react-router-dom";
-import { router } from "./Router";
+import React, { useState } from "react";
+
 export default function App() {
+  const [age, setAge] = useState(5);
+
+  const onChangeAge = () => {
+    setAge(age + 1);
+  };
+
   return (
     <div className="container">
-      {" "}
-      <RouterProvider router={router} />
+      <div>Tuổi là: {age}</div>
+      <div onClick={onChangeAge}>Tăng tuổi thêm 1</div>
     </div>
   );
 }

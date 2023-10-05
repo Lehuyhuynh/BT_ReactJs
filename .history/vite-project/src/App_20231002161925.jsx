@@ -79,13 +79,20 @@
 // }
 
 // export default App;
-import { RouterProvider } from "react-router-dom";
-import { router } from "./Router";
+import BTH1 from "./BaiHoc12/BTH1.JSX";
+import BTH2 from "./BaiHoc12/BTH2";
+import BTH3 from "./BaiHoc12/BTH3";
+import BT1 from "./BaiHoc12/BT1";
+import BT2 from "./BaiHoc10/BT2";
+
 export default function App() {
   return (
     <div className="container">
-      {" "}
-      <RouterProvider router={router} />
+      <BTH1></BTH1>
+      <BTH2></BTH2>
+      <BTH3></BTH3>
+      <BT1></BT1>
+      <BT2></BT2>
     </div>
   );
 }
